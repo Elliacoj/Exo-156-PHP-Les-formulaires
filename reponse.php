@@ -1,9 +1,10 @@
 <?php
 if(isset($_POST['submit'], $_POST['prenom'])) {
-    if(($_POST['prenom'] === "James") || ($_POST['prenom'] === "james")) {
+    $prenom = strip_tags(trim($_POST['prenom']));
+    if(($prenom === "James") || ($prenom === "james")) {
         echo "Bond, James Bond";
     }
     else {
-        echo "Bonjour $_POST[prenom]";
+        echo "Bonjour $prenom";
     }
 }
