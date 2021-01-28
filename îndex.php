@@ -11,13 +11,16 @@
     <div id="container">
 
         <form method="post" action="reponse.php">
+
             <div>
                 <label for="prenom">Veuillez écrire votre prénom: </label>
                 <input type="text" id="prenom" name="prenom">
             </div>
+
             <div>
                 <input type="submit" value="Envoyer" name="submit">
             </div>
+
         </form>
 
     </div>
